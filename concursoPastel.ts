@@ -45,7 +45,7 @@ const determinarGanador= () => {
 
         let sabor: number= rs.questionFloat ("ingrese puntaje del sabor (1 a 5): ");
 
-        while (sabor <0 || sabor >5) {
+        while (sabor <=0 || sabor >5) {
           console.log ("😣 Error: ingrese un numero entre 1 y 5")
           sabor = rs.questionFloat ("ingrese puntaje del sabor: ");
         }
